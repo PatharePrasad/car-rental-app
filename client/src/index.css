@@ -99,15 +99,7 @@ button{
   opacity: 0;
   transition: 0.3s;
 }
-.car-content {
-  font-size: 1vw; /* Adjust as needed */
-  text-align: justify;
-}
-.car-content:after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-}
+
 .login{
   background-color: black;
   padding-top: 50px;
