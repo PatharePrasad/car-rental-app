@@ -1,46 +1,122 @@
-const express = require('express');
-const app = express();
-
-// Sample JSON data
-const cars = [
+[
   {
-    "_id": "616b6eeb3e1450bf4f8b66d1",
-    "name": "Tata Altroz",
-    "image": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Altroz/7741574886929962/front-left-side-47.jpg?tr=w-456",
-    "fuelType": "petrol",
+    "_id": "662a317626741d4397aae6a2",
+    "name": "Mahindra Scorpio",
+    "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/40432/scorpio-n-exterior-right-front-three-quarter-75.jpeg?isig=0&q=80",
+    "capacity": 8,
+    "fuelType": "Diesel",
     "bookedTimeSlots": [],
-    "capacity": 5
+    "rentPerHour": 200,
+    "createdAt": "2024-04-25T10:33:26.485Z",
+    "updatedAt": "2024-04-25T10:58:45.792Z",
+    "__v": 0
   },
   {
-    "_id": "616b6eeb3e1450bf4f8b66d1",
-    "name": "Mahindra XUV700",
-    "image": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/XUV700/81633939851/front-left-side-47.jpg?tr=w-456",
-    "fuelType": "petrol",
+    "_id": "662a35b726741d4397aae6a7",
+    "name": "Toyota Land Cruiser",
+    "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/139739/land-cruiser-2023-exterior-left-front-three-quarter-3.jpeg?isig=0&q=80",
+    "capacity": 8,
+    "fuelType": "Diesel",
     "bookedTimeSlots": [],
-    "capacity": 5
+    "rentPerHour": 1500,
+    "createdAt": "2024-04-25T10:51:35.913Z",
+    "updatedAt": "2024-04-25T10:51:35.913Z",
+    "__v": 0
   },
   {
-    "_id": "616b6eeeb3e1450bf4f8b66d1",
-    "name": "Tata Harrier",
-    "image": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Harrier/675715846798795/front-left-side-47.jpg?tr=w-456",
-    "fuelType": "petrol",
+    "_id": "662a360b26741d4397aae6aa",
+    "name": "Toyota Fortuner",
+    "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/44709/fortuner-exterior-right-front-three-quarter-20.jpeg?isig=0&q=80",
+    "capacity": 8,
+    "fuelType": "Diesel",
     "bookedTimeSlots": [],
-    "capacity": 5
+    "rentPerHour": 500,
+    "createdAt": "2024-04-25T10:52:59.651Z",
+    "updatedAt": "2024-04-25T10:52:59.651Z",
+    "__v": 0
   },
   {
-    "_id": "616b6eeeb3e1450bf4f8b67c7",
-    "name": "Hyundai i20",
-    "image": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/i20/6866146548743336/front-left-side"
+    "_id": "662a36ec26741d4397aae6ad",
+    "name": "Land Rover Range Rover",
+    "image": "https://imgd.aeplcdn.com/600x337/n/af5du3a_1590443.jpg?q=80",
+    "capacity": 8,
+    "fuelType": "Diesel",
+    "bookedTimeSlots": [],
+    "rentPerHour": 2000,
+    "createdAt": "2024-04-25T10:56:44.883Z",
+    "updatedAt": "2024-05-05T12:15:23.265Z",
+    "__v": 0
+  },
+  {
+    "_id": "66376df3497e08bacaf8fe80",
+    "name": "Mahindra XUV 700",
+    "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/42355/xuv700-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80",
+    "capacity": 8,
+    "fuelType": "Diesel",
+    "bookedTimeSlots": [],
+    "rentPerHour": 300,
+    "createdAt": "2024-05-05T11:30:59.378Z",
+    "updatedAt": "2024-05-05T11:30:59.378Z",
+    "__v": 0
+  },
+  {
+    "_id": "66376e6f497e08bacaf8fe83",
+    "name": "Tata Nexon",
+    "image": "https://imgd.aeplcdn.com/600x337/n/nrvambb_1688459.jpg?q=80",
+    "capacity": 4,
+    "fuelType": "Diesel",
+    "bookedTimeSlots": [],
+    "rentPerHour": 200,
+    "createdAt": "2024-05-05T11:33:03.913Z",
+    "updatedAt": "2024-05-05T11:33:22.546Z",
+    "__v": 0
+  },
+  {
+    "_id": "6639f052ca98333aafa790f8",
+    "name": "Hyundai Verna",
+    "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/121943/verna-exterior-right-front-three-quarter-101.jpeg?isig=0&q=80",
+    "capacity": 4,
+    "fuelType": "Petrol",
+    "bookedTimeSlots": [],
+    "rentPerHour": 300,
+    "createdAt": "2024-05-07T09:11:46.090Z",
+    "updatedAt": "2024-05-07T09:11:46.090Z",
+    "__v": 0
+  },
+  {
+    "_id": "6639f109ca98333aafa790fb",
+    "name": "Audi A4",
+    "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/51909/a4-exterior-right-front-three-quarter-2.jpeg?q=80",
+    "capacity": 4,
+    "fuelType": "Petrol",
+    "bookedTimeSlots": [],
+    "rentPerHour": 400,
+    "createdAt": "2024-05-07T09:14:49.814Z",
+    "updatedAt": "2024-05-07T09:15:10.429Z",
+    "__v": 0
+  },
+  {
+    "_id": "663b424ba0ad7ef9ed257894",
+    "name": "Maruti Suzuki Ertiga",
+    "image": "https://imgd.aeplcdn.com/600x337/n/c6es93a_1572125.jpg?q=80",
+    "capacity": 7,
+    "fuelType": "Petrol",
+    "bookedTimeSlots": [],
+    "rentPerHour": 350,
+    "createdAt": "2024-05-08T09:13:47.637Z",
+    "updatedAt": "2024-05-08T09:13:47.637Z",
+    "__v": 0
+  },
+  {
+    "_id": "663b4294a0ad7ef9ed257897",
+    "name": "Kia Sonet",
+    "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/174423/sonet-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80",
+    "capacity": 4,
+    "fuelType": "Petrol",
+    "bookedTimeSlots": [],
+    "rentPerHour": 200,
+    "createdAt": "2024-05-08T09:15:00.078Z",
+    "updatedAt": "2024-05-08T09:15:00.078Z",
+    "__v": 0
   }
-];
-
-// Endpoint to get the car data
-app.get('/api/cars', (req, res) => {
-  res.json(cars);
-});
-
-// Start the server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+]
