@@ -73,13 +73,13 @@ button{
 
 /* this is just for ui purpose , no functionality is related */
 .car{
-  border-radius: 5px;
+  border-radius: 5px solid #fff;
   margin-top: 100px;
   height: 160px;
   transition: 0.3s;
 }
 .car:hover{
-  height :220px;
+  height :210px;
 }
 .car:hover > .car-content{
 
