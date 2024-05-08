@@ -1,0 +1,46 @@
+const express = require('express');
+const app = express();
+
+// Sample JSON data
+const cars = [
+  {
+    "_id": "616b6eeb3e1450bf4f8b66d1",
+    "name": "Tata Altroz",
+    "image": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Altroz/7741574886929962/front-left-side-47.jpg?tr=w-456",
+    "fuelType": "petrol",
+    "bookedTimeSlots": [],
+    "capacity": 5
+  },
+  {
+    "_id": "616b6eeb3e1450bf4f8b66d1",
+    "name": "Mahindra XUV700",
+    "image": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/XUV700/81633939851/front-left-side-47.jpg?tr=w-456",
+    "fuelType": "petrol",
+    "bookedTimeSlots": [],
+    "capacity": 5
+  },
+  {
+    "_id": "616b6eeeb3e1450bf4f8b66d1",
+    "name": "Tata Harrier",
+    "image": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Harrier/675715846798795/front-left-side-47.jpg?tr=w-456",
+    "fuelType": "petrol",
+    "bookedTimeSlots": [],
+    "capacity": 5
+  },
+  {
+    "_id": "616b6eeeb3e1450bf4f8b67c7",
+    "name": "Hyundai i20",
+    "image": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/i20/6866146548743336/front-left-side"
+  }
+];
+
+// Endpoint to get the car data
+app.get('/api/cars', (req, res) => {
+  res.json(cars);
+});
+
+// Start the server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
